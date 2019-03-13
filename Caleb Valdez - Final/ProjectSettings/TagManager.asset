@@ -9,6 +9,9 @@ TagManager:
   - lb_groundTarget
   - lb_perchTarget
   - Songkeeper
+  - Interactable
+  - Indicator
+  - SongKeeperIndicator
   layers:
   - Default
   - TransparentFX
