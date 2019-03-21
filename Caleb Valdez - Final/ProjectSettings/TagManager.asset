@@ -12,6 +12,9 @@ TagManager:
   - Interactable
   - Indicator
   - SongKeeperIndicator
+  - Record Ring 1
+  - Record Ring 2
+  - Record Ring 3
   layers:
   - Default
   - TransparentFX
