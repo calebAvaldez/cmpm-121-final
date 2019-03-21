@@ -171,7 +171,7 @@ public class Dialog : MonoBehaviour
         chirpClip = chirp[index];
         //chirpSource.clip = chirpClip;
         chirpSource.pitch = (Random.Range(0.8f, 1.2f));
-        chirpSource.PlayOneShot(chirpClip, .2f);
+        chirpSource.PlayOneShot(chirpClip, .02f);
     }
 
 
