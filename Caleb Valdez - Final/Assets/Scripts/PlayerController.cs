@@ -54,6 +54,7 @@ public class PlayerController : MonoBehaviour
     public GameObject stone1;
     public GameObject stone2;
     public GameObject stone3;
+    public GameObject wall;
 
     public GameObject collider1;
     public GameObject collider2;
@@ -151,6 +152,7 @@ public class PlayerController : MonoBehaviour
         if (birdCount == 2 & !collider1.activeInHierarchy)
         {
             stone1.SetActive(true);
+            wall.SetActive(false);
         }
 
         if (mic.isRecording)
@@ -219,7 +221,7 @@ public class PlayerController : MonoBehaviour
                 {
                     other.gameObject.transform.parent.gameObject.SetActive(false);
                     count++;
-                    SetCountText();
+                    //SetCountText();
                 }
             }
 
@@ -229,8 +231,8 @@ public class PlayerController : MonoBehaviour
                 {
                     //count--;
                    // birdCount++;
-                    SetCountText();
-                    SetBirdCountText();
+                    //SetCountText();
+                    //SetBirdCountText();
 
                   /*  if (birdCount == 1)
                     {
@@ -319,11 +321,11 @@ public class PlayerController : MonoBehaviour
 
     void SetCountText()
     {
-        countText.text = "You: " + count.ToString();
+        countText.text = "";
     }
 
     void SetBirdCountText()
     {
-        birdCountText.text = "Songkeeper: " + birdCount.ToString();
+        birdCountText.text = "";
     }
 }
